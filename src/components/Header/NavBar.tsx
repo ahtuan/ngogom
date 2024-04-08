@@ -1,21 +1,40 @@
+"use client";
 import React from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { PATH } from "@/contants/common";
+
+type ItemType = {
+  children: React.ReactNode;
+  href: string;
+  active?: boolean;
+};
+const Item: React.FC<ItemType> = ({ children, href, active }) => {
+  return (
+    <li className="hover:text-orange hover:underline hover:cursor-pointer hover:underline-offset-8 ">
+      <Link
+        href={href}
+        className={active ? "font-bold underline underline-offset-8" : ""}
+      >
+        {children}
+      </Link>
+    </li>
+  );
+};
 
 const NavBar = () => {
+  const pathname = usePathname();
   return (
     <ul className="flex gap-10 items-center">
-      <li>
-        <Link href="/">Trang Chủ</Link>
-      </li>
-      <li>
-        <Link href="/">Sản phẩm</Link>
-      </li>
-      <li>
-        <Link href="/about">{process.env.APP_NAME}?</Link>
-      </li>
-      <li>
-        <Link href="/blog">Ngỏ</Link>
-      </li>
+      <Item href={PATH.Home} active={pathname === PATH.Home}>
+        Trang Chủ
+      </Item>
+      <Item href={PATH.About} active={pathname === PATH.About}>
+        {process.env.NEXT_PUBLIC_APP_NAME}?
+      </Item>
+      <Item href={PATH.Blog} active={pathname === PATH.Blog}>
+        Chuyện "Gốm"
+      </Item>
     </ul>
   );
 };
