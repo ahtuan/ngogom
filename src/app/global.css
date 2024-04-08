@@ -23,6 +23,10 @@ body {
     color: theme('colors.black');
     background-color: theme('colors.beige');
 }
+
+.content-wrapper {
+    min-height: calc(100vh - 64px - 256px - 24px);
+}
 .words-wrapper {
     -webkit-perspective: 300px;
     -moz-perspective: 300px;

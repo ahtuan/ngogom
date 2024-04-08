@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={`antialiased`}>
         <main className="flex flex-col min-h-[100vh]">
           <Header />
-          {children}
+          <div className="content-wrapper">{children}</div>
           <Footer className="mt-auto" />
         </main>
       </body>
