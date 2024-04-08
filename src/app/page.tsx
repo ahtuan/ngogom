@@ -1,7 +1,8 @@
-export default function Home() {
-    return (
-        <main className="mt-4">
-            <p className="font-bold">Create Next App</p>
-        </main>
-    );
-}
+import React from "react";
+import Home from "@/views/home";
+
+const Page = () => {
+  return <Home />;
+};
+
+export default Page;
