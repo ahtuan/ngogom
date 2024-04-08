@@ -6,7 +6,7 @@ import OutstandingProducts from "@/views/home/components/OutstandingProducts";
 const Index = () => {
   return (
     <>
-      <div className="h-[50vh] flex items-center justify-center relative gap-16">
+      <div className="h-[60vh] flex items-center justify-center relative gap-16">
         <div className="text-right words-wrapper">
           <Greet />
           <p className="text-2xl mt-20">

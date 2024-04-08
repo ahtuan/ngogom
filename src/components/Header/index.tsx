@@ -5,13 +5,15 @@ import { Logo } from "@/components";
 
 const Index = () => {
   return (
-    <nav className=" container mx-auto flex justify-between p-4 ">
-      <div className="relative w-1/3">
-        <div className="absolute">
-          <Logo />
+    <nav className="p-4 sticky top-0 bg-beige/[0.9] z-10 ">
+      <div className="container mx-auto flex justify-between ">
+        <div className="relative w-1/3">
+          <div className="absolute">
+            <Logo />
+          </div>
         </div>
+        <NavBar />
       </div>
-      <NavBar />
     </nav>
   );
 };
