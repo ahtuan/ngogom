@@ -34,11 +34,9 @@ const mockData = [
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   },
 ];
-const Index = () => {
-  const [emblaRef] = useEmblaCarousel();
-
+const Index = ({ className = "" }) => {
   return (
-    <div className="container mx-auto">
+    <div className={`container mx-auto ${className}`}>
       <Carousel options={OPTIONS}>
         {mockData.map((value, index) => (
           <Item key={index} {...value} />

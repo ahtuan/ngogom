@@ -22,7 +22,7 @@ const Index = () => {
           className="drop-shadow-2xl"
         />
       </div>
-      <OutstandingProducts />
+      <OutstandingProducts className="mb-24" />
     </>
   );
 };

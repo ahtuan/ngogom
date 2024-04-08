@@ -22,8 +22,7 @@ export default function RootLayout({
         <main className="flex flex-col min-h-[100vh]">
           <Header />
           {children}
-          <Divider className="mt-auto" />
-          <Footer />
+          <Footer className="mt-auto" />
         </main>
       </body>
     </html>
