@@ -1,7 +1,8 @@
 import React from "react";
+import About from "@/views/about";
 
 const Page = () => {
-  return <div>About Us</div>;
+  return <About />;
 };
 
 export default Page;

@@ -1,7 +1,8 @@
 import React from "react";
+import Blog from "@/views/blog";
 
 const Page = () => {
-  return <div>Blog</div>;
+  return <Blog />;
 };
 
 export default Page;
