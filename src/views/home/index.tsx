@@ -3,6 +3,9 @@ import Image from "next/image";
 import Greet from "@/views/home/components/Greet";
 import OutstandingProducts from "@/views/home/components/OutstandingProducts";
 import Logo from "/public/images/logo.svg";
+import { getClient } from "~/sanity/lib/sanity.client";
+import { getFeatures } from "~/sanity/lib/sanity.query";
+import { readToken } from "~/sanity/lib/sanity.api";
 
 const Index = () => {
   return (

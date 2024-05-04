@@ -1,17 +1,19 @@
 import React from "react";
 import Image from "next/image";
+import { urlForImage } from "~/sanity/lib/sanity.image";
+import type { Image as ImageType } from "sanity";
 
 type ItemProps = {
-  src: string;
+  image: ImageType;
   alt?: string;
   description?: string;
 };
 
-const Item: React.FC<ItemProps> = ({ src, alt, description }) => {
+const Item: React.FC<ItemProps> = ({ image, alt, description }) => {
   return (
     <div className="group relative cursor-pointer">
       <Image
-        src={src}
+        src={urlForImage(image)?.url() || ""}
         alt={alt ?? ""}
         className="rounded-lg"
         width={300}
