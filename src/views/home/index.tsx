@@ -15,7 +15,7 @@ const Index = () => {
           <Greet />
           <p className="text-lg sm:text-2xl mt-16 sm:mt-20 text-center sm:text-right">
             Ở đây có gốm...
-            <br /> và cả chuyện của "gốm".
+            <br /> và cả chuyện của &quot;gốm&quot;.
           </p>
         </div>
         <Image

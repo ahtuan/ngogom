@@ -33,7 +33,7 @@ const NavBar = () => {
         {process.env.NEXT_PUBLIC_APP_NAME}?
       </Item>
       <Item href={PATH.Blog} active={pathname === PATH.Blog}>
-        Chuyện "Gốm"
+        Chuyện &quot;Gốm&quot;
       </Item>
     </ul>
   );
