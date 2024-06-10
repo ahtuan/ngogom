@@ -30,7 +30,7 @@ const Page = async ({
   const { post, recentPosts } = await getPostData(params.slug);
 
   return (
-    <section className="container mx-auto grid gap-6 lg:grid-cols-4">
+    <section className="container p-4 sm:p-0 sm:mx-auto grid gap-6 lg:grid-cols-4">
       {post ? (
         <article className="grid lg:col-span-3 space-y-2.5 mb-4">
           <Image

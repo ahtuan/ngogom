@@ -12,7 +12,7 @@ type BlogCardProps = {
 const BlogCard = ({ post, size = "default" }: BlogCardProps) => {
   return (
     <div
-      className={`bg-white rounded-lg overflow-hidden shadow-lg dark:bg-gray-950 ${
+      className={`bg-white rounded-lg overflow-hidden shadow-lg ${
         size === "small" ? "h-[330px]" : "h-[375px]"
       }`}
     >
@@ -34,8 +34,8 @@ const BlogCard = ({ post, size = "default" }: BlogCardProps) => {
           </Link>
         </h3>
         <p
-          className={`text-gray-500 dark:text-gray-400  ${
-            size === "small" ? "text-sm mb-2" : "mb-4"
+          className={`text-sm lg:text-base text-gray-500  ${
+            size === "small" ? "!text-sm mb-2" : "mb-4"
           } line-clamp-3`}
         >
           {post.excerpt}
@@ -43,8 +43,8 @@ const BlogCard = ({ post, size = "default" }: BlogCardProps) => {
         <div className="flex justify-end pb-2">
           <Link
             href={"/blog/" + post.slug}
-            className={`inline-flex items-center text-primary hover:underline ${
-              size == "small" ? "text-sm" : ""
+            className={`text-sm lg:text-base inline-flex items-center text-primary hover:underline ${
+              size == "small" ? "!text-sm" : ""
             }`}
             prefetch={false}
           >
