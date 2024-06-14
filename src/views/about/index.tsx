@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Index = () => {
   return (
@@ -23,26 +24,37 @@ const Index = () => {
           Chào mình là một Cô lớn tuổi đeo chiếc kính gọng tròn trong suốt, tụi
           mình cũng đắn đo về việc sẽ vào cửa hàng do lúc ấy thật sự chỉ muốn
           tìm đường để về nhà, nhưng do không gian ấy và cái chào thân thiện của
-          Cô đã làm tụi mình quên đi những lắng lo trong đầu.
+          Cô đã làm tụi mình quên đi nhiệm vụ lúc này.
         </p>
         <p>
-          Vào tiệm, những kệ gỗ được xếp đầy bởi những chiếc chén, ly, tách, tô
-          ... được làm bằng Gốm. Cô hỏi tụi mình từ đâu tới, &ldquo;Tụi con đang
-          đi lạc Cô ạ!&rdquo; tôi đáp lại cô một cách nhanh nhẹn trong trạng
-          thái không chút nghĩ suy, như cách những người bạn đồng trang lứa chơi
-          thân với nhau hay buôn chuyện cạnh gánh hàng rong.
+          Vào tiệm, những kệ gỗ được xếp đầy bởi những chiếc chén, ly, tô, tách
+          ... được làm bằng Gốm và xuất xứ từ Nhật Bản. Cô hỏi tụi mình từ đâu
+          tới, &ldquo;Tụi con ở Thủ Đức nhưng đang bị lạc Cô ạ!&rdquo; tôi đáp
+          lại cô một cách nhanh nhẹn trong trạng thái không chút nghĩ suy, như
+          cách những người bạn đồng trang lứa chơi thân với nhau hay buôn chuyện
+          cạnh gánh hàng rong.
         </p>
         <p>
           Cô cho tụi mình sạc nhờ điện thoại cho đến khi đủ để tra cứu đường về
           nhà, trong thời gian đó, tụi mình có cơ hội được nghe Cô kể về chuyện
           Gốm và cả những lần Cô &ldquo;lạc&rdquo; giống tụi mình trong giai
           đoạn trưởng thành này. Có lẽ vì Cô đã truyền cho Ngõ một tình yêu đặc
-          biệt với Gốm nên tụi mình cứ ấp ủ và nuôi lớn Ngõ Gốm như hôm nay. Tuy
-          hiện tại, Ngõ Gốm chỉ là cửa hàng nhỏ tọa lạc tại 4/2, đường số 25,
-          phường Long Thạnh Mỹ, thành phố Thủ Đức. Nhưng tụi mình tin rằng, Ngõ
-          Gốm rồi sẽ lớn và trưởng thành thông qua những lần bạn vun đắp bằng
-          cách ghé thăm Ngõ và cho Ngõ cơ hội được vỗ về trạng thái trong tâm
-          hồn bạn!
+          biệt với Gốm nên tụi mình cứ ấp ủ và nuôi lớn Ngõ Gốm như hôm nay.
+        </p>
+
+        <p>
+          Tuy hiện tại,{" "}
+          <Link href={"/"} className="font-bold">
+            Ngõ
+          </Link>{" "}
+          chỉ là cửa hàng nhỏ bán gốm Nhật tọa lạc tại{" "}
+          <i>4/2, đường số 25, phường Long Thạnh Mỹ, thành phố Thủ Đức</i>.
+          Nhưng tụi mình tin rằng,{" "}
+          <Link href={"/"} className="font-bold">
+            Ngõ
+          </Link>{" "}
+          rồi sẽ lớn và trưởng thành qua những lần bạn ghé thăm và cho Ngõ có cơ
+          hội vỗ về trạng thái tâm hồn bạn!
         </p>
         <p className="text-right italic font-semibold">Ngõ Gốm</p>
       </article>

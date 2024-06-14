@@ -5,16 +5,16 @@ import type { Image as ImageType } from "sanity";
 
 type ItemProps = {
   image: ImageType;
-  alt?: string;
   description?: string;
 };
 
-const Item: React.FC<ItemProps> = ({ image, alt, description }) => {
+const Item: React.FC<ItemProps> = ({ image, description }) => {
+  console.log("image", image);
   return (
     <div className="group relative cursor-pointer">
       <Image
         src={urlForImage(image)?.url() || ""}
-        alt={alt ?? ""}
+        alt={(image.alt as string) ?? ""}
         className="rounded-lg"
         width={300}
         height={300}
